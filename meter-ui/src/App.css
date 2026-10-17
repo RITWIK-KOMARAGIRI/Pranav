@@ -1,0 +1,32 @@
+.page { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+h1 { font-size: 22px; margin: 0 0 16px; }
+.bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; background: #1a212b; border: 1px solid #2a3340; border-radius: 10px; padding: 14px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #9aa7b8; }
+.field select, .field input { background: #0f1419; color: #e6e9ee; border: 1px solid #2f3a49; border-radius: 6px; padding: 8px 10px; font-size: 14px; min-width: 150px; }
+button { background: #2f6df6; color: #fff; border: 0; border-radius: 6px; padding: 9px 18px; font-size: 14px; cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+button.ghost { background: #2a3340; padding: 9px 12px; }
+.msg { margin: 12px 0; padding: 10px 12px; border-radius: 6px; font-size: 14px; }
+.msg.ok { background: #12301f; color: #7ee2a1; }
+.msg.error { background: #3a1a1d; color: #ff9aa2; }
+.card { background: #1a212b; border: 1px solid #2a3340; border-radius: 10px; margin-top: 18px; overflow: hidden; }
+.card h2 { font-size: 15px; margin: 0; padding: 12px 14px; border-bottom: 1px solid #2a3340; display: flex; justify-content: space-between; }
+.card h2 span { font-weight: normal; color: #9aa7b8; font-size: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 14px; border-bottom: 1px solid #232c38; }
+th { color: #9aa7b8; font-weight: 500; font-size: 12px; }
+td.num { font-variant-numeric: tabular-nums; text-align: right; }
+th.num { text-align: right; }
+tr.flash { animation: flash 2.5s ease-out; }
+td.changed { color: #ffd166; font-weight: 600; }
+@keyframes flash { from { background: #1f4d36; } to { background: transparent; } }
+.empty { padding: 16px 14px; color: #9aa7b8; font-size: 14px; }
+.tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+button.tab { background: #1a212b; color: #9aa7b8; border: 1px solid #2a3340; }
+button.tab.active { background: #2f6df6; color: #fff; border-color: #2f6df6; }
+select.cell { background: #0f1419; color: #e6e9ee; border: 1px solid #2f3a49; border-radius: 6px; padding: 8px 10px; font-size: 14px; min-width: 170px; }
+td.actions { display: flex; gap: 8px; }
+button.danger { background: #8b2b34; }
+.warn { color: #ffd166; font-size: 12px; }
+.scroll { overflow-x: auto; }
+th small { font-weight: normal; color: #6f7c8d; }

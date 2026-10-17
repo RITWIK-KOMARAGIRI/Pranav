@@ -1,0 +1,21 @@
+{
+  "name": "modbus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+  "setup": "npm install && npm --prefix meter-ui install",
+  "dev": "concurrently -n api,ui \"node server.js\" \"npm --prefix meter-ui run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "pg": "^8.23.1",
+    "serialport": "^13.0.0"
+  }
+}
