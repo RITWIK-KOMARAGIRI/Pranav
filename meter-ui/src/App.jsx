@@ -349,7 +349,10 @@ export default function App() {
 
   return (
     <div className="page">
-      <h1>Modbus Meter Reader</h1>
+      <div className="header">
+  <img src="/logo.png" alt="Sri Parandhama Technologies" className="logo" />
+  <h1>Modbus Meter Reader</h1>
+</div>
       <div className="tabs">
         {[['settings', 'Settings'], ['compare', 'All meters']].map(([k, label]) => (
           <button key={k} className={tab === k ? 'tab active' : 'tab'} onClick={() => setTab(k)}>{label}</button>
